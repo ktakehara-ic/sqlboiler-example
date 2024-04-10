@@ -1,0 +1,22 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+# checksum:
+#   enabled: true
+#   require_checksum: true
+#   supported_envs:
+#   - all
+registries:
+- type: standard
+  ref: v4.159.0 # renovate: depName=aquaproj/aqua-registry
+- name: local
+  type: local
+  path: registry.yaml
+packages:
+- name: github.com/rubenv/sql-migrate/sql-migrate
+  version: v1.1.0
+  registry: local
+- name: volatiletech/sqlboiler@v4.16.2
+  registry: local
+- name: volatiletech/sqlboiler-mysql@v4.16.2
+  registry: local

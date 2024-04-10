@@ -1,0 +1,7 @@
+[mysql]
+  dbname = "items"
+  host = "127.0.0.1"
+  port = "33060"
+  user = "user"
+  pass = "pass"
+  sslmode = "false" 

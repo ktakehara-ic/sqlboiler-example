@@ -1,0 +1,13 @@
+packages:
+  - type: go_install
+    path: github.com/rubenv/sql-migrate/sql-migrate
+    description: SQL migration tool
+  - type: go_install
+    repo_owner: volatiletech
+    repo_name: sqlboiler
+    description: Generate a Go ORM tailored to your database schema
+    path: github.com/volatiletech/sqlboiler/v{{(semver .Version).Major}}
+  - type: go_install
+    name: volatiletech/sqlboiler-mysql
+    description: Generate a Go ORM tailored to your database schema
+    path: github.com/volatiletech/sqlboiler/v{{(semver .Version).Major}}/drivers/sqlboiler-mysql
